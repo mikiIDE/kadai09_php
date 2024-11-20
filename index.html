@@ -78,7 +78,19 @@
             </div>
             <button type="submit" class="submit-btn">投票する</button>
         </form>
+        <button id="check">結果だけ先に見ちゃう</button>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 画面の読み込みが完全に終わってから
+            const checkButton = document.getElementById("check");
+            checkButton.addEventListener("click", function () {
+                window.location.href = "result.php";
+            });
+        });
+    </script>
+
 </body>
 
 </html>

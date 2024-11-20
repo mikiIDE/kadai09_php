@@ -137,7 +137,7 @@ direction: rtl;でright to left（5 4 3 2 1）
 
 #check {
     display: block;
-    width: 50%;
+    width: 20%;
     padding: 10px;
     background-color: #deecde;
     color: rgb(33, 33, 33);
@@ -192,7 +192,7 @@ th {
 
 /* セルのスタイル */
 td {
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-bottom: 1px solid #e0e0e0;
     color: #4a4a4a;
 }

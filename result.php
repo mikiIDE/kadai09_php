@@ -12,6 +12,7 @@
     <div class="container">
         <h2>投票結果</h2>
         <?php
+        //評価を☆とかに変更する関数
         function showRating($value,$symbol){
             $output="";
             for ($i = 0; $i < 5; $i++){
