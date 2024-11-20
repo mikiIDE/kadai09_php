@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ときめき★タグ選手権</title>
+</head>
+<body>
+    <div class="container">
+        <h2>ときめき★タグ選手権</h2>
+        <h3>今までで一番ときめいたタグを教えてね</h3>
+        <form action="write.php" method="post">
+            <div class="form-group">
+                <label for="name">お名前：</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">E-MAIL：</label>
+                <input type="email" id="mail" name="mail" required>
+            </div>
+            <div class="form-group">
+                <label for="tag">ときめいたタグ：</label>
+                <input type="text" id="tag" name="tag" required>
+            </div>
+            <div class="rating-group">
+                <div class="rating-item">
+                    <p class="rating-label">かっこよさ：</p>
+                    <div class="rating star-rating">
+                        <!-- inputとlabelはidとfor属性で紐づけ -->
+                        <input type="radio" id="cool5" name="cool_rating" value="5">
+                        <label for="cool5" title="5 stars"></label>
+                        <input type="radio" id="cool4" name="cool_rating" value="4">
+                        <label for="cool4" title="4 stars"></label>
+                        <input type="radio" id="cool3" name="cool_rating" value="3">
+                        <label for="cool3" title="3 stars"></label>
+                        <input type="radio" id="cool2" name="cool_rating" value="2">
+                        <label for="cool2" title="2 stars"></label>
+                        <input type="radio" id="cool1" name="cool_rating" value="1">
+                        <label for="cool1" title="1 star"></label>
+                    </div>
+                </div>
+                <div class="rating-item">
+                    <p class="rating-label">可愛さ：</p>
+                    <div class="rating heart-rating">
+                        <input type="radio" id="cute5" name="cute_rating" value="5">
+                        <label for="cute5" title="5 hearts"></label>
+                        <input type="radio" id="cute4" name="cute_rating" value="4">
+                        <label for="cute4" title="4 hearts"></label>
+                        <input type="radio" id="cute3" name="cute_rating" value="3">
+                        <label for="cute3" title="3 hearts"></label>
+                        <input type="radio" id="cute2" name="cute_rating" value="2">
+                        <label for="cute2" title="2 hearts"></label>
+                        <input type="radio" id="cute1" name="cute_rating" value="1">
+                        <label for="cute1" title="1 heart"></label>
+                    </div>
+                </div>
+                <div class="rating-item">
+                    <p class="rating-label">使いやすさ：</p>
+                    <div class="rating smile-rating">
+                        <input type="radio" id="usability5" name="usability_rating" value="5">
+                        <label for="usability5" title="5 smiles"></label>
+                        <input type="radio" id="usability4" name="usability_rating" value="4">
+                        <label for="usability4" title="4 smiles"></label>
+                        <input type="radio" id="usability3" name="usability_rating" value="3">
+                        <label for="usability3" title="3 smiles"></label>
+                        <input type="radio" id="usability2" name="usability_rating" value="2">
+                        <label for="usability2" title="2 smiles"></label>
+                        <input type="radio" id="usability1" name="usability_rating" value="1">
+                        <label for="usability1" title="1 smile"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comment">一言：</label>
+                <input type="text" id="comment" name="comment" placeholder="空 欄 で も 投 票 で き る よ">
+            </div>
+            <button type="submit" class="submit-btn">投票する</button>
+        </form>
+    </div>
+</body>
+
+</html>

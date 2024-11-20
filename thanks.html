@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ときめき★タグ選手権</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="thanks">ときめき★タグ選手権<br>
+            投票ありがとうございました！</p>
+        <button id="check">投票結果を見る</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 画面の読み込みが完全に終わってから
+            const checkButton = document.getElementById("check");
+            checkButton.addEventListener("click", function () {
+                window.location.href = "result.php";
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    background-image: url("Designer.jpeg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* unicode-bidi: bidi-override（unicode文字の流れを逆にする）
+direction: rtl;でright to left（5 4 3 2 1）
+これでCSSの機能が5段階評価全部に反映される　 */
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+
+/* ラジオボタンは非表示（かわりに★などを使うため） */
+.rating>input {
+    display: none;
+}
+
+.rating-group {
+    margin: 20px 0;
+}
+
+.rating-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.rating>label {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    font-size: 2.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* 星マーク */
+.star-rating>label:before {
+    content: "\2605";
+    position: absolute;
+    transition: color 0.2s ease;
+}
+
+.star-rating>input:checked~label:before,
+.star-rating>input:hover~label:before {
+    color: #ffd700;
+}
+
+/* ハート */
+.heart-rating {
+    margin-left: 30px;
+    /* なぜかこのハートだけずれるため調整のmargin */
+}
+
+.heart-rating>label:before {
+    content: "\2764";
+    position: absolute;
+    transition: color 0.2s ease;
+}
+
+.heart-rating>input:checked~label:before,
+.heart-rating>input:hover~label:before {
+    color: #ff69b4;
+}
+
+/* スマイル */
+.smile-rating>label:before {
+    content: "\263A";
+    position: absolute;
+    transition: color 0.2s ease;
+}
+
+.smile-rating>input:checked~label:before,
+.smile-rating>input:hover~label:before {
+    color: #32cd32;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.thanks {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#check {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 30px auto;
+}
+
+#back {
+    display: block;
+    width: 10%;
+    padding: 10px;
+    background-color: #deecde;
+    color: rgb(33, 33, 33);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 30px auto;
+}

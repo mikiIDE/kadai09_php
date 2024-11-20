@@ -1,0 +1,5 @@
+テスト,test@email.com,<?php?>,2,5,3
+テスト,test2@email.com,title,5,2,5,見て分かりやすいのマジ神
+テスト,test3@email.com,include,5,3,3,
+テスト１２：１７,test@mail.com,head,5,1,5,かしら…
+テスト１３：１１,test2@mail.com,input,2,2,5,実用的で最高～！
