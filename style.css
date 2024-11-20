@@ -1,8 +1,9 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
     padding: 20px;
+    color: #455a64;
     background-image: url("Designer.jpeg");
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -10,19 +11,19 @@ body {
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
+    max-width: 1200px;
     padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /*ちょっと透き通る感じ*/
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 h2,
 h3 {
-    color: #333;
     text-align: center;
     margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 .form-group {
@@ -86,7 +87,7 @@ direction: rtl;でright to left（5 4 3 2 1）
 
 /* ハート */
 .heart-rating {
-    margin-left: 30px;
+    margin-left: 25px;
     /* なぜかこのハートだけずれるため調整のmargin */
 }
 
@@ -117,17 +118,16 @@ direction: rtl;でright to left（5 4 3 2 1）
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #deecde;
+    color: rgb(33, 33, 33);
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
     margin-top: 30px;
 }
 
 .submit-btn:hover {
-    background-color: #45a049;
+    background-color: #c3eec3;
 }
 
 .thanks {
@@ -137,15 +137,19 @@ direction: rtl;でright to left（5 4 3 2 1）
 
 #check {
     display: block;
-    width: 100%;
+    width: 50%;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #deecde;
+    color: rgb(33, 33, 33);
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 12px;
     margin: 30px auto;
+}
+
+#check:hover {
+    background-color: #c3eec3;
 }
 
 #back {
@@ -159,4 +163,64 @@ direction: rtl;でright to left（5 4 3 2 1）
     cursor: pointer;
     font-size: 12px;
     margin: 30px auto;
+}
+
+#back:hover {
+    background-color: #c3eec3;
+}
+
+/* テーブル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明の白 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ヘッダーのスタイル */
+th {
+    background-color: #ff9e80;  /* サーモンピンク */
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* セルのスタイル */
+td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #4a4a4a;
+}
+
+/* 偶数行の背景色(even か odd か） */
+tr:nth-child(even) {
+    background-color: rgba(236, 239, 241, 0.5);
+}
+
+/* 評価記号のスタイル */
+.rating-symbol {
+    color: #d1d1d1;
+    font-size: 1.2em;
+    margin-right: 3px;
+    transition: color 0.3s ease;
+}
+
+/* かっこよさの評価 */
+td:nth-child(4) .rating-symbol.filled {
+    color: #d1e391;
+}
+
+/* 可愛さの評価 */
+td:nth-child(5) .rating-symbol.filled {
+    color: #ff9e80;
+}
+
+/* 使いやすさの評価 */
+td:nth-child(6) .rating-symbol.filled {
+    color: #a5d6a7;
 }
