@@ -17,5 +17,5 @@ PHP提出用課題
 ## ⑥フリー項目（感想、シェアしたいこと等なんでも）
 - [感想]ラーニングシステムの動画ではtxtではなくcsvだったこと、福岡校の方からcsvの読み込み～というお話があったため講義で使ったdata.textではなくcsvにしてみました。ただ、それが利点になるのかどうかなどは理解できていません。あと背景画像を初めて生成AIに作ってもらいましたが楽しかったです。
 - [参考記事]
-  - 1. [https://terakoya.sejuku.net/question/detail/33821]（HTML/CSSで星型5段階評価）
-  - 2. [https://techplay.jp/column/580]（PHPでcsvファイルを読み込みする【初心者向け】）
+  - 1. [https://terakoya.sejuku.net/question/detail/33821]　「HTML/CSSで星型5段階評価」
+  - 2. [https://techplay.jp/column/580]　「PHPでcsvファイルを読み込みする【初心者向け】」
